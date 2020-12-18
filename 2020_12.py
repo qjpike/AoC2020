@@ -31,7 +31,7 @@ for i in dat:
         dir %= 4
 
 
-print(abs(x_loc) + abs(y_loc))
+print("Part 1:", abs(x_loc) + abs(y_loc))
 
 x_loc = 0
 y_loc = 0
@@ -69,4 +69,4 @@ for i in dat:
             y_loc_wp = tmp
 
 
-print(abs(x_loc) + abs(y_loc))
+print("Part 2:", abs(x_loc) + abs(y_loc))

@@ -2,8 +2,8 @@ import math
 def strips(s):
     return s.strip()
 
-# f = open("input.txt")
-f = open("test.txt")
+f = open("input.txt")
+# f = open("test.txt")
 # f = open("test2.txt")
 
 dat = list(map(int, f.readlines()))
@@ -29,10 +29,7 @@ for i in dat:
     else:
         break
 
-print(ones)
-print(twos)
-print(threes)
-print(ones * threes)
+print("Part 1:", ones * threes)
 
 
 
@@ -47,22 +44,5 @@ for i in list(count.keys()):
         if i + j in count:
             count[i+j] += count[i]
 
-print(count[max(count.keys())])
+print("Part 2:", count[max(count.keys())])
 
-
-len_run = 0
-i = 0
-mult = [1,2,4,7,13]
-count = 1
-while i < len(dat)-len_run:
-    len_run = 0
-    j = 1
-    while i + j < len(dat) and dat[i+j] == dat[i] + j:
-        len_run += 1
-        j += 1
-    print(len_run)
-    count *= mult[len_run]
-    i += j
-
-
-print(count)

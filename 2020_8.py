@@ -31,7 +31,7 @@ while True:
         instr_ptr %= len(dat)
 
 
-print("Part One: " + str(accum))
+print("Part One:", str(accum))
 
 
 chngs = {}
@@ -65,7 +65,7 @@ for i in list(chngs.keys().__reversed__()):
             instr_ptr += 1
 
         if instr_ptr == len(dat):
-            print("Part Two: " + str(accum))
+            print("Part Two:", str(accum))
             exit()
         instr_ptr %= len(dat)
 

@@ -39,7 +39,7 @@ for j in queue:
             if i.name not in queue:
                 queue.append(i.name)
 
-print(len(queue)-1)
+print("Part 1:",len(queue)-1)
 
 def get_weight(color):
     w = 0
@@ -47,6 +47,6 @@ def get_weight(color):
         w += rules[rules.index(color)].contain[i]*(1+get_weight(i))
     return w
 
-print(get_weight('shinygold'))
+print("Part 2:", get_weight('shinygold'))
 
 

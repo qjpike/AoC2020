@@ -30,7 +30,7 @@ for i in range(25,len(dat)):
             break
 
     if found == False:
-        print(dat[i])
+        print("Part 1:", dat[i])
         break
 
 look = dat[i]
@@ -40,6 +40,5 @@ for i in range(len(dat)):
     while sum(dat[i:i+a]) <= look:
         a += 1
         if sum(dat[i:i+a]) == look:
-            print(min(dat[i:i+a]) + max(dat[i:i+a]))
-            print(dat[i] + dat[i+a])
+            print("Part 2:", min(dat[i:i+a]) + max(dat[i:i+a]))
             exit()

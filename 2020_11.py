@@ -184,7 +184,7 @@ while True:
         break
     countzm1 = field.count("#")
 
-print(countzm1)
+print("Part 1:", countzm1)
 
 
 
@@ -208,4 +208,4 @@ while True:
     countzm1 = field.count("#")
 
 
-print(countzm1)
+print("Part 2:", countzm1)

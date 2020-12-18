@@ -34,10 +34,10 @@ for i in dat:
 
     seats += [row[0]*8 + col[0]]
 
-print("Max: " + str(max))
+print("Part 1: " + str(max))
 
 
 seats.sort()
 for i in range(len(seats)-1):
     if seats[i] + 1 != seats[i+1]:
-        print("Missing: " + str(seats[i] + 1))
+        print("Part 2: " + str(seats[i] + 1))

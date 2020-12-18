@@ -57,7 +57,7 @@ for i in dat:
         record_contains = []
         end_of_record = False
 
-print(valid)
+print("Part 1:", valid)
 
 passport = {}
 valid = 0
@@ -78,7 +78,4 @@ for i in dat:
             k = j.split(":")
             passport[k[0]] = k[1]
 
-
-
-
-print(valid)
+print("Part 2:", valid)

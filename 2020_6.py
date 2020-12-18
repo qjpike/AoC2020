@@ -25,7 +25,7 @@ for i in dat:
         end_of_record = False
         yess = []
 
-print(count)
+print("Part 1:",count)
 
 yess = {}
 party_size = 0
@@ -49,20 +49,5 @@ for i in dat:
         yess = {}
         party_size = 0
 
-print(count)
+print("Part 2:",count)
 
-
-s = None
-total = 0
-for line in data:
-    if line == "":
-        total += len(s)
-        s = None
-    else:
-        if s is None:
-            s = set(line)
-        else:
-            # part 1
-            s = set(line).union(s)
-            # part 2
-            #s = set(line).intersection(s)

@@ -32,7 +32,7 @@ for i in lis:
         wait_min = i*j - best
         bus_id = i
 
-print("Part One: " + str(wait_min * bus_id))
+print("Part One:", str(wait_min * bus_id))
 
 lis_2 = dat[1].split(",")
 res = {}
@@ -52,4 +52,4 @@ for i in range(len(busses)):
         strt += period
     period = period * busses[i]
 
-print("Part Two: " + str(strt))
+print("Part Two:", str(strt))

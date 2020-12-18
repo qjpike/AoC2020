@@ -2,7 +2,7 @@ def strips(s):
     return s.strip()
 
 f = open("input.txt")
-f = open("test.txt")
+# f = open("test.txt")
 
 
 # dat = list(map(int, f.readlines()))
@@ -49,9 +49,5 @@ for i in range(0,len(dat),2):
 
     x_pos = (x_pos + 1)%len(dat[i])
 
-print(trees_1)
-print(trees_3)
-print(trees_5)
-print(trees_7)
-print(trees1_2)
-print(trees_1*trees_3*trees_5*trees_7*trees1_2)
+print("Part 1:", trees_3)
+print("Part 2:", trees_1*trees_3*trees_5*trees_7*trees1_2)

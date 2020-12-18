@@ -36,5 +36,5 @@ for i in dat:
     elif i[int(x[1])-1] == let:
         count2 += 1
 
-print(count)
-print(count2)
+print("Part 1:",count)
+print("Part 2:",count2)
