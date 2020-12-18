@@ -36,7 +36,7 @@ for i in dat:
         # print(format(mem[mem_addr],'38b'))
         # print(format(mask_on,'38b'))
         # print(format(mask_off,'38b'))
-print(sum(mem.values()))
+print("Part 1:", sum(mem.values()))
 
 mem = {}
 for i in dat:
@@ -66,5 +66,5 @@ for i in dat:
                 mem_addr = int("".join(tmal),2)
                 mem[mem_addr] = val
 
-print(sum(mem.values()))
+print("Part 2:", sum(mem.values()))
 
