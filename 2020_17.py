@@ -32,8 +32,8 @@ def check_surrounds_4d(field,point):
 def strips(s):
     return s.strip()
 
-# f = open("input_17.txt")
-f = open("test.txt")
+f = open("input.txt")
+#f = open("test.txt")
 # f = open("test2.txt")
 
 # dat = list(map(int, f.readlines()))
@@ -41,7 +41,7 @@ dat = list(map(strips, f.readlines()))
 # dat = f.read().strip()
 
 field = []
-f = open("input_17.txt")
+f = open("input.txt")
 # f = open("test.txt")
 # f = open("test2.txt")
 

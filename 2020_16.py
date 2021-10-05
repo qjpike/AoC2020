@@ -3,7 +3,7 @@ import copy
 def strips(s):
     return s.strip()
 
-f = open("input_16.txt")
+f = open("input.txt")
 # f = open("test.txt")
 # f = open("test2.
 # txt")

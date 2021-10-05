@@ -3,7 +3,7 @@
 def strips(s):
     return s.strip()
 
-f = open("input_21.txt")
+f = open("input.txt")
 # f = open("test.txt")
 dat = list(map(strips, f.readlines()))
 
@@ -37,6 +37,30 @@ for i in list(database.keys()):
 print("Part 1:", [x for x in ing if x not in might].__len__())
 
 
-print(database)
-
 # database lists the allergens & the ingredients and can be solved by hand.
+
+found = []
+
+while found.__len__() < database.__len__():
+    for i in database.keys():
+        if len(database[i]) == 1 and i not in found:
+            s = database[i]
+            found.append(i)
+
+    for j in found:
+        for k in database.keys():
+            if database[k].__len__() > 1:
+                database[k] -= database[j]
+
+found.sort()
+
+out = ""
+for i in found:
+    s = []
+    out += database[i].pop()
+    out += ","
+
+
+print("Part 2: " + out[:out.__len__()-1])
+
+

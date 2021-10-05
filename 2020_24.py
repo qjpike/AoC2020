@@ -2,7 +2,7 @@ def strips(str):
     return str.strip()
 
 
-dat = open("input_24.txt").readlines()
+dat = open("input.txt").readlines()
 # dat = list(map(strips, open("test.txt").readlines()))
 
 dirs = ['e', 'se', 'sw', 'w', 'nw', 'ne']
@@ -92,9 +92,9 @@ def part2():
                 exit()
 
         tiles = new_tiles.copy()
+    
+    return sum(list(tiles.values()))
 
-        print("Day", d + 1, ":", sum(list(tiles.values())))
 
-
-# print("Part 1:",sum(list(part1().values())))
-part2()
+print("Part 1: ",sum(list(part1().values())))
+print("Part 2: ",part2())

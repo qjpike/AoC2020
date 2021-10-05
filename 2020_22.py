@@ -3,7 +3,7 @@
 def strips(s):
     return s.strip()
 
-f = open("input_22.txt")
+f = open("input.txt")
 # f = open("test.txt")
 dat = list(map(strips, f.readlines()))
 
@@ -97,11 +97,6 @@ for i in dat:
         p1_stack.append(int(i))
     elif p1p2 == 1:
         p2_stack.append(int(i))
-
-
-
-
-
 
 import time
 

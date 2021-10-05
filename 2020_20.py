@@ -4,7 +4,7 @@ import copy
 def strips(s):
     return s.strip()
 
-f = open("input_20.txt")
+f = open("input.txt")
 # f = open("test.txt")
 
 
@@ -179,10 +179,10 @@ for row in range(edge_size):
                 tiles.remove(i)
                 break
 
-for i in image:
-    for j in i:
-        print(j,end=' ')
-    print("")
+# for i in image:
+#     for j in i:
+#         print(j,end=' ')
+#     print("")
 
 
 # delete the edges of all tiles and put into single array
@@ -199,14 +199,13 @@ for i in range(len(image)):
 # use Tile class for easy rotation
 image_class = Tile('0000',image_arr)
 
-for i in image_class.tile:
-    print(i)
+# for i in image_class.tile:
+#     print(i)
 
 def find_monsters(ic_old):
     sea_monster_hashes = [(0,18),(1,0),(1,5),(1,6),(1,11),(1,12),(1,17),(1,18),(1,19),(2,1),(2,4),(2,7),(2,10),(2,13),(2,16)]
 
     first_count = sum([i.count("#") for i in image_class.tile])
-    print("First Count:",first_count)
     ic = copy.deepcopy(ic_old)
     count = first_count
     for a in range(4):
@@ -229,18 +228,23 @@ def find_monsters(ic_old):
 
         count = sum([i.count("#") for i in ic.tile])
         if count != first_count:
-            ic.print_tile()
+            return count
 
-        return count
+        return False
 
 for i in range(3):
-    print(find_monsters(image_class))
+    res = find_monsters(image_class)
+    if res:
+        print("Part 2: " + str(res))
+
     image_class.rotate()
 
 image_class.flip_h()
 
 for i in range(3):
-    print(find_monsters(image_class))
+    res = find_monsters(image_class)
+    if res:
+        print("Part 2: " + str(res))
     image_class.rotate()
 
 

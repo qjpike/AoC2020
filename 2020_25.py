@@ -1,5 +1,5 @@
-card_pk = 9232416
-door_pk = 14144084
+card_pk = 12232269
+door_pk = 19452773
 
 def transform(subNum, publicKey):
     j = 1

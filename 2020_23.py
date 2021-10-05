@@ -19,7 +19,7 @@
 #
 # print(curr_arr)
 
-s = "614752839"
+s = "193467258"
 
 cups = list(map(int,s))
 
@@ -32,6 +32,7 @@ for i in range(100):
     new_cups = new_cups[:new_cups.index(dest)+1] + move + new_cups[new_cups.index(dest) + 1:]
     cups = new_cups[1:] + new_cups[:1]
 
+print("Part 1: ", end="")
 print("".join(map(str,cups[cups.index(1)+1:] + cups[:cups.index(1)])))
 
 import time
@@ -88,6 +89,7 @@ b = a.next
 
 end = time.time()
 
-print(a.val * b.val)
+print("Part 2: " + str(a.val * b.val))
 
+print("Part 2 Timer: ",end="")
 print(end - start)
